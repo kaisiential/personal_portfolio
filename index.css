@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --font-sans: 'Inter', sans-serif;
-  --color-apple-bg: #F5F5F7;
-  --color-apple-text: #1D1D1F;
-  --color-card: #FFFFFF;
-  --color-card-dark: #1C1C1E;
+  --font-sans: "Inter", sans-serif;
+  --color-apple-bg: #f5f5f7;
+  --color-apple-text: #1d1d1f;
+  --color-card: #ffffff;
+  --color-card-dark: #1c1c1e;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F5F5F7;
-  color: #1D1D1F;
+  font-family: "Inter", sans-serif;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .dark body {
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -39,8 +41,12 @@ body {
 
 /* Animation utilities */
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .animate-scroll {
@@ -52,8 +58,12 @@ body {
 }
 
 @keyframes scroll-travel {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-scroll-travel {
@@ -66,8 +76,13 @@ body {
 }
 
 @keyframes gradient-slow {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 0.4; }
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }
 
 .animate-gradient-slow {
@@ -76,38 +91,78 @@ body {
 
 /* Custom animate-in classes for Tailwind v4 */
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes zoom-in-95 {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-from-bottom-4 {
-  from { transform: translateY(1rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-from-bottom-8 {
-  from { transform: translateY(2rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-from-bottom-12 {
-  from { transform: translateY(3rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-from-bottom-2 {
-  from { transform: translateY(0.5rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-from-top-4 {
-  from { transform: translateY(-1rem); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .animate-in {
