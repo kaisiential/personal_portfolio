@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
         {/* Image Container with Hover Effect */}
         <div className="relative aspect-[4/5] lg:aspect-square w-full rounded-[2.5rem] overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200 bg-black group">
           <img
-            src="../images/IMG_0117.jpg"
+            src="./images/IMG_0117.jpg"
             alt="Portrait of Kai"
             className="w-full h-full object-cover transition-all duration-500 ease-in-out grayscale group-hover:grayscale-0 group-hover:opacity-40"
           />
